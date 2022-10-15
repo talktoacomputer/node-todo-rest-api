@@ -10,7 +10,7 @@ A simple REST API to perform CRUD operations for a Todo app such as Add Todo, Ge
 > I don't know. I've built this to test my basic understanding of my MERN stack skills. I may choose to make a different app to test out other features before I update this.
 
 - Does it have a frontend?
-> Yes. Please head to [Sample React Todo App](https://github.com/talktoacomputer/react-query-sample-crud). I've built this FE to test out `react-query` [library](https://tanstack.com/query/v4), so don't expect much.
+> Yes. Please head to [Sample React Todo App](https://github.com/talktoacomputer/react-query-sample-crud). I've built this FE to test out [React Query](https://tanstack.com/query/v4) library, so don't expect much.
 
 ---
 
