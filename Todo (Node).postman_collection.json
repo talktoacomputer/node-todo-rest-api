@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "11a056db-5154-4a74-93be-f8910ce1bd76",
+		"name": "Todo (Node)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7593863"
+	},
+	"item": [
+		{
+			"name": "Get all todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all todos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "925"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39d-XFXds29G8LnZM/JruoDM6UTKtNY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 11:31:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"633bcbac80647b544c6f1f19\",\n        \"task\": \"eggs\",\n        \"created\": \"2022-10-04T05:59:08.164Z\",\n        \"completed\": true,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"633bcbd867859f2a0607a457\",\n        \"task\": \"Buy eggs\",\n        \"created\": \"2022-10-04T05:59:52.216Z\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"633be0ab1c046189846b5f3a\",\n        \"task\": \"bread\",\n        \"created\": \"2022-10-04T07:28:43.312Z\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"633be22e02d33dd92461b815\",\n        \"task\": \"butter\",\n        \"created\": \"2022-10-04T07:35:10.054Z\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"633be4cb4d5604e50dd3440e\",\n        \"task\": \"bourbon\",\n        \"created\": \"2022-10-04T07:46:19.893Z\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"633be63f4d5604e50dd34410\",\n        \"task\": \"bourbon-drink\",\n        \"created\": \"2022-10-04T07:52:31.231Z\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"633bf7700af8186dc7517522\",\n        \"task\": \"Fly high\",\n        \"created\": \"2022-10-04T09:05:52.711Z\",\n        \"completed\": false,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"633c126ee1fe495278485f4f\",\n        \"task\": \"Fly highdd\",\n        \"created\": \"2022-10-04T11:01:02.725Z\",\n        \"completed\": false,\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Add New Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"task\": \"Fly highdd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add New Todo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task\": \"Fly highdd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "160"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a0-zQuWBywDjamBRfgJRj6x3eSO16c\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Oct 2022 11:01:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"New task added!\",\n    \"response\": [\n        {\n            \"task\": \"Fly highdd\",\n            \"created\": \"2022-10-04T11:01:02.725Z\",\n            \"completed\": false,\n            \"_id\": \"633c126ee1fe495278485f4f\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Todo by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/delete/633bf877ebe20e7ce14d6f32",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"delete",
+						"633bf877ebe20e7ce14d6f32"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Todo by ID",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/delete/633bf877ebe20e7ce14d6f32",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"delete",
+								"633bf877ebe20e7ce14d6f32"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b5-jc0YplYU8TiNJBRDf10M7wKqJ4U\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Oct 2022 09:39:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task [633bf877ebe20e7ce14d6f32] deleted!\",\n    \"response\": {\n        \"_id\": \"633bf877ebe20e7ce14d6f32\",\n        \"task\": \"Fly high\",\n        \"created\": \"2022-10-04T09:10:15.806Z\",\n        \"completed\": false,\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Todo by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"task\": \"Buy eggs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/update/633bcbd867859f2a0607a457",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"update",
+						"633bcbd867859f2a0607a457"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Edit Todo by ID",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task\": \"Buy eggs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/update/633bcbd867859f2a0607a457",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"update",
+								"633bcbd867859f2a0607a457"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "192"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c0-UGQLaDlC1BALutId/3BznJHcGqQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Oct 2022 10:50:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task [633bcbd867859f2a0607a457] updated!\",\n    \"response\": {\n        \"_id\": \"633bcbd867859f2a0607a457\",\n        \"task\": \"This is edited task\",\n        \"created\": \"2022-10-04T05:59:52.216Z\",\n        \"completed\": false,\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Mark Todo Complete by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/update/633bcbac80647b544c6f1f19",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"update",
+						"633bcbac80647b544c6f1f19"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mark Todo Complete by ID",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"completed\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/update/633bcbac80647b544c6f1f19",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"update",
+								"633bcbac80647b544c6f1f19"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "176"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b0-DcxbADB873lrJPVXAD/OGgbHYlQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 04 Oct 2022 10:50:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task [633bcbac80647b544c6f1f19] updated!\",\n    \"response\": {\n        \"_id\": \"633bcbac80647b544c6f1f19\",\n        \"task\": \"eggs\",\n        \"created\": \"2022-10-04T05:59:08.164Z\",\n        \"completed\": true,\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://localhost:27017/test/todos",
+			"type": "string"
+		}
+	]
+}
